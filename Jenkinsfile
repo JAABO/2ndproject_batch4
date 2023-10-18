@@ -1,12 +1,9 @@
 pipeline {
     agent any
-    stages {
-        stage('build') {
-            steps {
-                echo "Welcome to Jenkins Enviroment"
-                sh 'echo using shell within Jenkinsfile'
-                echo 'not using shell in the Jenkinsfile'
-            }
+        stages{
+            stage('run') {
+                steps {
+                    // One or more steps need to be included within the steps block.
         }
     }
 }
